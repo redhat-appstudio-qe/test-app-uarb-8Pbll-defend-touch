@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-btvp
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-omlk-tenant/test-app-uarb/devfile-sample-python-basic-btvp@sha256:d6124a94887a6042be7f5485ebd9b790fb6e3d9f01be70643e2a352e73439937
+        name: my-python
+        resources: {}
+status: {}
